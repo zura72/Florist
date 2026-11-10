@@ -1,0 +1,2150 @@
+{
+ "url": "http://localhost:8080",
+ "at": "2026-11-02T02:51:25.277Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.55,
+    0.49,
+    0.61,
+    0.67,
+    0.48,
+    0.83
+   ],
+   "motion": {
+    "elements": 39,
+    "css": 0,
+    "transitions": 39,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5323,
+     "screens": 5.9,
+     "words": 693,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "beach-wedding-bouquet.jpg",
+      "bridal-bouquet-unsplash.jpg",
+      "bouquet-de-roses-roses.jpg",
+      "tulip-bouquet-vienna-unsplash.jpg",
+      "bouquet-of-peonies-12.jpg",
+      "a-bouquet-of-pink-tulips-in-a.jpg",
+      "dfc-0794-bright-bouquet-of-pink-roses.jpg",
+      "22-bridal-bouquet-unsplash.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "chars": 26,
+     "lines": 2,
+     "size": 60,
+     "vw": 4.2,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.37,
+     "top": 323,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "lines": 2,
+     "size": 60,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 323,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Belanja menurut jenis bunga",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 971,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Koleksi bunga",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 1499,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bunga pernikahan",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3459,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Papan bunga dan duka cita",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 3459,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Cara pesan",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 3681,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ongkos antar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 3952,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pertanyaan yang sering ditanya",
+      "words": 4,
+      "chars": 30,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 4412,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      36,
+      60
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 167,
+     "max": {
+      "size": 60,
+      "vw": 4.2,
+      "font": "Plus Jakarta Sans",
+      "text": "Buket segar, tiba hari ini"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fdf2f5",
+       "top": 165,
+       "hsl": {
+        "h": 344,
+        "s": 0.73,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f7f7f8",
+       "top": 4835,
+       "hsl": {
+        "h": 240,
+        "s": 0.07,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f616b",
+       "share": 0.59
+      },
+      {
+       "color": "#1c1d22",
+       "share": 0.29
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#c2325f",
+       "share": 0.04
+      },
+      {
+       "color": "#a32650",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#fbe4ea",
+      "hsl": {
+       "h": 344,
+       "s": 0.74,
+       "l": 0.94
+      },
+      "fg": "#a32650"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 21,
+     "inHero": 4,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Langsung ke koleksi",
+      "Lihat koleksi",
+      "Tanya via WhatsApp",
+      "Pesan via WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 17,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 16,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.32
+     }
+    ],
+    "nav": {
+     "links": 11,
+     "fixed": true,
+     "height": 108,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5323,
+    "margins": {
+     "left": 136,
+     "right": 136
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 165,
+      "height": 710,
+      "words": 49,
+      "media": 1,
+      "middle": 79,
+      "heading": {
+       "text": "Buket segar,",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 136,
+      "right": 136,
+      "textLeft": 136,
+      "textRight": 806,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cats",
+      "tag": "section",
+      "top": 971,
+      "height": 213,
+      "words": 13,
+      "media": 0,
+      "middle": 85,
+      "heading": {
+       "text": "Belanja menurut jenis bunga",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 136,
+      "right": 171,
+      "textLeft": 136,
+      "textRight": 193,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.usp",
+      "tag": "section",
+      "top": 1280,
+      "height": 123,
+      "words": 40,
+      "media": 0,
+      "middle": 110,
+      "heading": {
+       "text": "Kirim hari ini",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 222,
+      "right": 183,
+      "textLeft": 222,
+      "textRight": 183,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#koleksi.koleksi",
+      "tag": "section",
+      "top": 1499,
+      "height": 1670,
+      "words": 179,
+      "media": 12,
+      "middle": 20,
+      "heading": {
+       "text": "Koleksi bunga",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 136,
+      "right": 136,
+      "textLeft": 136,
+      "textRight": 136,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#khusus.khusus",
+      "tag": "section",
+      "top": 3265,
+      "height": 320,
+      "words": 29,
+      "media": 2,
+      "middle": 20,
+      "heading": {
+       "text": "Bunga pernikahan",
+       "size": 36,
+       "tag": "b"
+      },
+      "left": 136,
+      "right": 136,
+      "textLeft": 164,
+      "textRight": 176,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cara.cara",
+      "tag": "section",
+      "top": 3681,
+      "height": 154,
+      "words": 48,
+      "media": 0,
+      "middle": 92,
+      "heading": {
+       "text": "Cara pesan",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 136,
+      "right": 175,
+      "textLeft": 136,
+      "textRight": 175,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#antar.antar",
+      "tag": "section",
+      "top": 3932,
+      "height": 385,
+      "words": 42,
+      "media": 1,
+      "middle": 40,
+      "heading": {
+       "text": "Ongkos antar",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 136,
+      "right": 152,
+      "textLeft": 689,
+      "textRight": 152,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tanya.tanya",
+      "tag": "section",
+      "top": 4412,
+      "height": 327,
+      "words": 88,
+      "media": 0,
+      "middle": 53,
+      "heading": {
+       "text": "Pertanyaan yang sering ditanya",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 136,
+      "right": 160,
+      "textLeft": 136,
+      "textRight": 160,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.kaki",
+      "tag": "footer",
+      "top": 4835,
+      "height": 488,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Koleksi",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 136,
+      "right": 138,
+      "textLeft": 136,
+      "textRight": 138,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "size": 60,
+      "top": 323,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 136,
+      "n": 7
+     },
+     {
+      "x": 152,
+      "n": 3
+     },
+     {
+      "x": 746,
+      "n": 3
+     },
+     {
+      "x": 689,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.09,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 660,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.81,
+    0.6,
+    0.69,
+    0.83,
+    0.75,
+    0.57,
+    0.82,
+    0.9,
+    0.9
+   ],
+   "motion": {
+    "elements": 39,
+    "css": 0,
+    "transitions": 39,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8454,
+     "screens": 8.3,
+     "words": 676,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "beach-wedding-bouquet.jpg",
+      "bridal-bouquet-unsplash.jpg",
+      "bouquet-de-roses-roses.jpg",
+      "tulip-bouquet-vienna-unsplash.jpg",
+      "bouquet-of-peonies-12.jpg",
+      "a-bouquet-of-pink-tulips-in-a.jpg",
+      "dfc-0794-bright-bouquet-of-pink-roses.jpg",
+      "22-bridal-bouquet-unsplash.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "chars": 26,
+     "lines": 2,
+     "size": 50,
+     "vw": 6.5,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 763,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "lines": 2,
+     "size": 50,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 50,
+      "vw": 6.5,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 763,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Belanja menurut jenis bunga",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1071,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Koleksi bunga",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 1627,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bunga pernikahan",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5545,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Papan bunga dan duka cita",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5805,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Cara pesan",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5957,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ongkos antar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6801,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pertanyaan yang sering ditanya",
+      "words": 4,
+      "chars": 30,
+      "lines": 1,
+      "size": 31.6,
+      "vw": 4.1,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7196,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      32,
+      50
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.2
+     },
+     "measureChars": 101,
+     "max": {
+      "size": 50,
+      "vw": 6.5,
+      "font": "Plus Jakarta Sans",
+      "text": "Buket segar, tiba hari ini"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fdf2f5",
+       "top": 209,
+       "hsl": {
+        "h": 344,
+        "s": 0.73,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f7f7f8",
+       "top": 7755,
+       "hsl": {
+        "h": 240,
+        "s": 0.07,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f616b",
+       "share": 0.59
+      },
+      {
+       "color": "#1c1d22",
+       "share": 0.29
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#c2325f",
+       "share": 0.04
+      },
+      {
+       "color": "#a32650",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#fbe4ea",
+      "hsl": {
+       "h": 344,
+       "s": 0.74,
+       "l": 0.94
+      },
+      "fg": "#a32650"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 21,
+     "inHero": 4,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Langsung ke koleksi",
+      "Lihat koleksi",
+      "Tanya via WhatsApp",
+      "Pesan via WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 17,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 16,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 152,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8454,
+    "margins": {
+     "left": 31,
+     "right": 31
+    },
+    "sections": [
+     {
+      "sel": "header.site",
+      "tag": "header",
+      "top": 38,
+      "height": 152,
+      "words": 15,
+      "media": 0,
+      "middle": 16,
+      "heading": null,
+      "left": 31,
+      "right": 60,
+      "textLeft": 31,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 209,
+      "height": 806,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 228,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cats",
+      "tag": "section",
+      "top": 1071,
+      "height": 229,
+      "words": 13,
+      "media": 0,
+      "middle": 14,
+      "heading": {
+       "text": "Belanja menurut jenis bunga",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.usp",
+      "tag": "section",
+      "top": 1357,
+      "height": 214,
+      "words": 40,
+      "media": 0,
+      "middle": 135,
+      "heading": {
+       "text": "Kirim hari ini",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 117,
+      "right": 69,
+      "textLeft": 117,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#koleksi.koleksi",
+      "tag": "section",
+      "top": 1627,
+      "height": 3719,
+      "words": 179,
+      "media": 12,
+      "middle": 0,
+      "heading": {
+       "text": "Koleksi bunga",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#khusus.khusus",
+      "tag": "section",
+      "top": 5401,
+      "height": 500,
+      "words": 29,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Bunga pernikahan",
+       "size": 32,
+       "tag": "b"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 59,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cara.cara",
+      "tag": "section",
+      "top": 5957,
+      "height": 238,
+      "words": 48,
+      "media": 0,
+      "middle": 25,
+      "heading": {
+       "text": "Cara pesan",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#antar.antar",
+      "tag": "section",
+      "top": 6252,
+      "height": 889,
+      "words": 42,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tanya.tanya",
+      "tag": "section",
+      "top": 7196,
+      "height": 503,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pertanyaan yang sering ditanya",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 67,
+      "textLeft": 31,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.kaki",
+      "tag": "footer",
+      "top": 7755,
+      "height": 699,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Koleksi",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 31,
+      "right": 41,
+      "textLeft": 31,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "size": 50,
+      "top": 763,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 9
+     },
+     {
+      "x": 47,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.68,
+    0.64,
+    0.73,
+    0.86,
+    0.84,
+    0.71,
+    0.63,
+    0.71,
+    0.99,
+    0.98
+   ],
+   "motion": {
+    "elements": 39,
+    "css": 0,
+    "transitions": 39,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7888,
+     "screens": 9.3,
+     "words": 654,
+     "img": 22,
+     "video": 0,
+     "canvas": 0,
+     "svg": 14,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "beach-wedding-bouquet.jpg",
+      "bridal-bouquet-unsplash.jpg",
+      "bouquet-de-roses-roses.jpg",
+      "tulip-bouquet-vienna-unsplash.jpg",
+      "bouquet-of-peonies-12.jpg",
+      "a-bouquet-of-pink-tulips-in-a.jpg",
+      "dfc-0794-bright-bouquet-of-pink-roses.jpg",
+      "22-bridal-bouquet-unsplash.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "chars": 26,
+     "lines": 2,
+     "size": 36.4,
+     "vw": 9.3,
+     "font": "Plus Jakarta Sans",
+     "weight": 700,
+     "tracking": -0.03,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 462,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Buket segar, tiba hari ini",
+     "words": 5,
+     "lines": 2,
+     "size": 36.4,
+     "font": "Plus Jakarta Sans"
+    },
+    "headings": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 36.4,
+      "vw": 9.3,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 462,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Belanja menurut jenis bunga",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 825,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Koleksi bunga",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 1671,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bunga pernikahan",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 4535,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Papan bunga dan duka cita",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 4739,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "Cara pesan",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4966,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ongkos antar",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5719,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pertanyaan yang sering ditanya",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 26.3,
+      "vw": 6.7,
+      "font": "Plus Jakarta Sans",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6157,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      26,
+      36
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.2
+     },
+     "measureChars": 51,
+     "max": {
+      "size": 36.4,
+      "vw": 9.3,
+      "font": "Plus Jakarta Sans",
+      "text": "Buket segar, tiba hari ini"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f7f7f8",
+       "top": 1259,
+       "hsl": {
+        "h": 240,
+        "s": 0.07,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5f616b",
+       "share": 0.61
+      },
+      {
+       "color": "#1c1d22",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.06
+      },
+      {
+       "color": "#c2325f",
+       "share": 0.04
+      },
+      {
+       "color": "#a32650",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#fbe4ea",
+      "hsl": {
+       "h": 344,
+       "s": 0.74,
+       "l": 0.94
+      },
+      "fg": "#a32650"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 20,
+     "inHero": 3,
+     "radius": 10,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Langsung ke koleksi",
+      "Lihat koleksi",
+      "Tanya via WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 17,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.29
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 112,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7888,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 170,
+      "height": 599,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Buket segar,",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cats",
+      "tag": "section",
+      "top": 825,
+      "height": 379,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Belanja menurut jenis bunga",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.usp",
+      "tag": "section",
+      "top": 1259,
+      "height": 356,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Kirim hari ini",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 94,
+      "right": 51,
+      "textLeft": 94,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#pills.pills",
+      "tag": "div",
+      "top": 1723,
+      "height": 152,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 96,
+      "textLeft": 32,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ul#grid.grid",
+      "tag": "ul",
+      "top": 1899,
+      "height": 2455,
+      "words": 166,
+      "media": 12,
+      "middle": 12,
+      "heading": {
+       "text": "Buket Pastel Lembut",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#khusus.khusus",
+      "tag": "section",
+      "top": 4410,
+      "height": 500,
+      "words": 29,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Bunga pernikahan",
+       "size": 26,
+       "tag": "b"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 44,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cara.cara",
+      "tag": "section",
+      "top": 4966,
+      "height": 408,
+      "words": 48,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cara pesan",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 33,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#antar.antar",
+      "tag": "section",
+      "top": 5430,
+      "height": 670,
+      "words": 42,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Ongkos antar",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tanya.tanya",
+      "tag": "section",
+      "top": 6157,
+      "height": 578,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Pertanyaan yang sering ditanya",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 32,
+      "textLeft": 16,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.kaki",
+      "tag": "footer",
+      "top": 6791,
+      "height": 1097,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Koleksi",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Buket segar, tiba hari ini",
+      "size": 36,
+      "top": 462,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 9
+     },
+     {
+      "x": 32,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 167 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt Imbue and Albert Sans, but the page renders Plus Jakarta Sans.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 768,
+   "message": "The running text is a soft grey on its ground (6.2:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 768,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\laragon\\www\\Florist\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

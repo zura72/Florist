@@ -1,0 +1,202 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1793583003.107446,
+    "ast_hash": "e2b4d148831da85ecd9bbb11be5569fb",
+    "semantic_hash": ""
+  },
+  ".taste-skill/direction.json": {
+    "mtime": 1793585810.8760564,
+    "ast_hash": "a88df5d7ef2ae7c4436c752de558f3e6",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/report.json": {
+    "mtime": 1793586735.6492424,
+    "ast_hash": "cbf2f06ef70e36a8ce0f8a2d87fb656b",
+    "semantic_hash": ""
+  },
+  "assets/credits.json": {
+    "mtime": 1793586619.500383,
+    "ast_hash": "6a1a56ec25bde14831de9bc5261b3e74",
+    "semantic_hash": ""
+  },
+  "main.js": {
+    "mtime": 1793586449.04065,
+    "ast_hash": "dd34a6b2d7b3153efbd87272dd0fd4b2",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1793586619.423249,
+    "ast_hash": "47715707f60dc74720def1343df5b727",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/desktop-fold.jpg": {
+    "mtime": 1793586697.769938,
+    "ast_hash": "194b21c0958dc8461da702a49f7b5967",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/desktop-page-01.jpg": {
+    "mtime": 1793586707.712692,
+    "ast_hash": "91ba44c4149521aa4feac7f264e9324e",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/desktop-page-02.jpg": {
+    "mtime": 1793586707.8396194,
+    "ast_hash": "3aa30553ec5c1bdd86be4458143c0df7",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/desktop-page-03.jpg": {
+    "mtime": 1793586707.966387,
+    "ast_hash": "5306f37e4700bfd58af798411ae8fce5",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/mobile-fold.jpg": {
+    "mtime": 1793586723.089592,
+    "ast_hash": "67c743c7d6d1f95def8a099efe5afdf3",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/mobile-page-01.jpg": {
+    "mtime": 1793586732.994196,
+    "ast_hash": "7663994af517e30efc2dbed17377f9dd",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/mobile-page-02.jpg": {
+    "mtime": 1793586733.1065454,
+    "ast_hash": "6780a0bca9c2e47ab0522fe477ade695",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/tablet-fold.jpg": {
+    "mtime": 1793586710.5186152,
+    "ast_hash": "ec5c4ac2ea14f7765aba2e3c36408698",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/tablet-page-01.jpg": {
+    "mtime": 1793586720.3744762,
+    "ast_hash": "75c7e7bcd92580788ad53be350d430b7",
+    "semantic_hash": ""
+  },
+  ".taste-skill/inspect/tablet-page-02.jpg": {
+    "mtime": 1793586720.5268734,
+    "ast_hash": "57d3acdd9d318cc70082d495fc546c94",
+    "semantic_hash": ""
+  },
+  "assets/bunch-of-aster-flower-in-flower-market.jpg": {
+    "mtime": 1793582765.893176,
+    "ast_hash": "61e0838acd648bb40421284d25fe7fe4",
+    "semantic_hash": ""
+  },
+  "assets/taman-matahari-tangerang.jpg": {
+    "mtime": 1793582767.1370542,
+    "ast_hash": "a58b3ac2f3f9b21b16283722898ba12f",
+    "semantic_hash": ""
+  },
+  "assets/flowers-ready-to-be-prepared-by-florist.jpg": {
+    "mtime": 1793583793.6058416,
+    "ast_hash": "bc4f5298030aaa4fb3ed191d4e3d04bd",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/report.json": {
+    "mtime": 1793585780.807696,
+    "ast_hash": "666c8295718a25f953a30277d901b441",
+    "semantic_hash": ""
+  },
+  "design/DESIGN.md": {
+    "mtime": 1793585162.8708367,
+    "ast_hash": "9c9b34572085ebe093bfa64df89429cf",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/desktop-fold.jpg": {
+    "mtime": 1793585743.1271987,
+    "ast_hash": "8f4e1967020f9be82038dacce2e103b1",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/desktop-page-01.jpg": {
+    "mtime": 1793585752.160948,
+    "ast_hash": "3578f71bce011a7bea7c365a9278a331",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/desktop-page-02.jpg": {
+    "mtime": 1793585752.4409306,
+    "ast_hash": "2f7321a2469179783a9834170115dde0",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/desktop-page-03.jpg": {
+    "mtime": 1793585752.6247733,
+    "ast_hash": "7f2b41392540b8f7f8e6b7eb9d87f382",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/mobile-fold.jpg": {
+    "mtime": 1793585767.7379704,
+    "ast_hash": "52067708456e4b9e1840f455702929c3",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/mobile-page-01.jpg": {
+    "mtime": 1793585777.951953,
+    "ast_hash": "45c86ba36f017065cf4dd2eac06ac24f",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/mobile-page-02.jpg": {
+    "mtime": 1793585778.0978024,
+    "ast_hash": "47f9216057320926b7ea13323008d07f",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/tablet-fold.jpg": {
+    "mtime": 1793585755.4788184,
+    "ast_hash": "497a771854f4c0b85dc6e01e6c18c19e",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/tablet-page-01.jpg": {
+    "mtime": 1793585764.973056,
+    "ast_hash": "160ae8378244a60c28e21b3422907e34",
+    "semantic_hash": ""
+  },
+  ".taste-skill/before/tablet-page-02.jpg": {
+    "mtime": 1793585765.1252677,
+    "ast_hash": "5c835bafcf00ea2378b82daf03afee63",
+    "semantic_hash": ""
+  },
+  "assets/a-moment-of-red-between-night-and.jpg": {
+    "mtime": 1793585873.100915,
+    "ast_hash": "8fc7acc3715f9b240f10f526fb93f006",
+    "semantic_hash": ""
+  },
+  "assets/logo/favicon.svg": {
+    "mtime": 1793586013.9859314,
+    "ast_hash": "d4de2c23076eeb95e832b6aa9b76b530",
+    "semantic_hash": ""
+  },
+  "assets/logo/logo-mark.svg": {
+    "mtime": 1793586013.668454,
+    "ast_hash": "8286880d4f069a8869df7945143f1f67",
+    "semantic_hash": ""
+  },
+  "assets/logo/logo-template.svg": {
+    "mtime": 1793586013.8454692,
+    "ast_hash": "714a9c2fabf884fe1971bb3c43ece7f1",
+    "semantic_hash": ""
+  },
+  "assets/pink-rose-closeup-with-black-background.jpg": {
+    "mtime": 1793585872.008108,
+    "ast_hash": "8e8d97c62e95c388c2c587966ada7ffc",
+    "semantic_hash": ""
+  },
+  "assets/red-rose-with-black-background.jpg": {
+    "mtime": 1793585871.630017,
+    "ast_hash": "1b62efa179ac0b47b476235e159e55ac",
+    "semantic_hash": ""
+  },
+  "assets/spathoglottis-plicata-flower-on-black-background.jpg": {
+    "mtime": 1793585873.4409058,
+    "ast_hash": "28f0845ba22e0f42abfc56817c8ebb19",
+    "semantic_hash": ""
+  },
+  "assets/tuberose-at-night.jpg": {
+    "mtime": 1793585872.7593002,
+    "ast_hash": "a4cbaea4bdfce238c8212d196f00e527",
+    "semantic_hash": ""
+  },
+  "assets/white-and-pink-orchid-on-black-background.jpg": {
+    "mtime": 1793585872.435563,
+    "ast_hash": "07f86ccc7708f274d2b103faca023c9c",
+    "semantic_hash": ""
+  }
+}

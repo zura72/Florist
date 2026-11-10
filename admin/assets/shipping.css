@@ -1,0 +1,65 @@
+/* Dasbor > Ongkir & daerah antar. Memakai token & komponen admin.css; hanya tambahan khusus halaman ini. */
+
+.zone-note { margin: 0 0 var(--space-16); }
+.zone-note code, .empty-note code, .zone-help code { font-size: .8125em; overflow-wrap: anywhere; }
+
+/* Isian teks di tabel (nama daerah) — gaya sama dengan .input-num */
+.zone-text {
+  width: 100%; max-width: 320px; min-height: var(--size-tap-target); padding: 0 var(--space-12);
+  background: var(--field-bg); border: 1px solid var(--field-line); border-radius: var(--radius-control);
+  transition: border-color var(--duration-color), box-shadow var(--duration-color);
+}
+.zone-text:hover { border-color: var(--color-ink); }
+.zone-text:focus-visible { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px var(--color-tint-strong); }
+.cell-zone { min-width: 220px; }
+.cell-zone .sub { margin-top: var(--space-4); }
+.row-off .zone-text { color: var(--color-muted); }
+
+.fee-cell { display: grid; gap: var(--space-4); justify-items: start; }
+.input-num:disabled, .field input:disabled { background: var(--color-surface); color: var(--color-muted); border-color: var(--color-line); cursor: not-allowed; }
+.input-sort { max-width: 88px; }
+
+/* Kotak centang "Tanya dulu" dengan area sentuh 44px */
+.ask-check {
+  display: inline-flex; align-items: center; gap: var(--space-8); min-height: var(--size-tap-target);
+  font-size: .8125rem; font-weight: var(--font-weight-medium); color: var(--color-ink); cursor: pointer; white-space: nowrap;
+}
+.ask-check input { width: 20px; height: 20px; margin: 0; accent-color: var(--color-accent); flex: none; cursor: pointer; }
+.ask-check input:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+
+.zone-help { margin-top: var(--space-16); max-width: 72ch; line-height: 1.55; }
+
+/* Formulir tambah daerah: 1 kolom di ponsel, 2 di tablet, satu baris di layar lebar */
+.zone-add { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-16); align-items: start; }
+.zone-add .field input[type="text"], .zone-add .field input[type="number"] { min-height: var(--field-height); }
+.field-opt { font-weight: var(--font-weight-medium); color: var(--color-muted); }
+.field-hint { font-size: .75rem; color: var(--color-muted); line-height: 1.4; }
+.field-label-text { font-size: .8125rem; font-weight: var(--font-weight-semibold); color: var(--color-ink); }
+.field-active { justify-items: start; }
+.zone-add-actions { display: flex; }
+.zone-add-actions .btn { width: 100%; min-height: var(--button-height, var(--field-height)); }
+
+@media (min-width: 768px) {
+  .zone-add { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .zone-add .field-label { grid-column: 1 / -1; }
+  .zone-add-actions { grid-column: 1 / -1; }
+  .zone-add-actions .btn { width: auto; }
+}
+@media (min-width: 1200px) {
+  .zone-add { grid-template-columns: minmax(220px, 2fr) minmax(160px, 1.3fr) minmax(170px, 1.3fr) 96px auto; }
+  .zone-add .field-label { grid-column: auto; }
+  .zone-add-actions { grid-column: 1 / -1; }
+}
+
+/* Ponsel: baris tabel jadi kartu bertumpuk (dasar dari .table-cards di admin.css) */
+@media (max-width: 759px) {
+  .table-zones .cell-zone { display: grid; gap: var(--space-4); min-width: 0; text-align: left; }
+  .table-zones .cell-zone::before { content: none; }
+  .table-zones .zone-text { max-width: none; font-weight: var(--font-weight-semibold); }
+  .table-zones .cell-zone .sub { margin-left: 0; display: block; }
+  .table-zones .fee-cell { justify-items: end; }
+  .table-zones td { align-items: flex-start; }
+  .table-zones td[data-label="Urutan"], .table-zones td[data-label="Aktif"] { align-items: center; }
+  .table-zones .cell-save { align-items: center; }
+  .ask-check { white-space: normal; }
+}

@@ -1,0 +1,342 @@
+/* Floral layer: botanical illustrations, preloader, photo skeletons, petals and small press/hover effects.
+   Loaded after styles.css. Every value comes from design/tokens.css. Motion uses transform and opacity only. */
+
+/* Botanical colours. Each class sets fill and color, so symbols drawn with currentColor follow too. */
+.f-petal { fill: var(--color-petal-light); color: var(--color-petal-light); }
+.f-petal-mid { fill: var(--color-petal); color: var(--color-petal); }
+.f-bloom { fill: var(--color-bloom); color: var(--color-bloom); }
+.f-leaf { fill: var(--color-leaf); color: var(--color-leaf); }
+.f-leaf-deep { fill: var(--color-leaf-deep); color: var(--color-leaf-deep); }
+.f-pollen { fill: var(--color-pollen); }
+.f-stem { fill: none; stroke: var(--color-leaf-deep); stroke-width: 1.6; stroke-linecap: round; }
+.f-swirl { fill: none; stroke: var(--color-accent-hover); stroke-width: 1.6; stroke-linecap: round; }
+.f-paper { fill: var(--color-tint-strong); stroke: var(--color-petal); stroke-width: 1.4; stroke-linejoin: round; }
+.f-paper-line { fill: none; stroke: var(--color-petal); stroke-width: 1.2; stroke-linecap: round; }
+.f-handle { fill: none; stroke: var(--color-petal); stroke-width: 3; stroke-linecap: round; }
+.f-ribbon { fill: var(--color-bloom); stroke: var(--color-accent); stroke-width: 1.2; stroke-linejoin: round; }
+
+/* Preloader: shown only when the head script adds .ks-preload (first visit per session, motion allowed). */
+.preload { display: none; }
+.ks-preload .preload { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; background: var(--preload-veil); pointer-events: none; transition: opacity var(--duration-press) ease; }
+.ks-preload-out .preload { opacity: 0; }
+.preload-art { width: var(--preload-size); height: var(--preload-size); overflow: visible; }
+.pl-petal { color: var(--color-petal); transform-box: view-box; transform-origin: 0 0; transform: rotate(calc(var(--i) * 45deg)) scale(0); animation: pl-open var(--duration-move) var(--ease-spring) calc(var(--i) * 25ms) forwards; }
+.pl-alt { color: var(--color-bloom); }
+.pl-logo { color: var(--color-accent); transform-box: fill-box; transform-origin: 50% 50%; animation: pl-logo var(--duration-pop) var(--ease-out) both; }
+@keyframes pl-open { to { transform: rotate(calc(var(--i) * 45deg + 12deg)) scale(1); } }
+@keyframes pl-logo { from { opacity: 0; transform: scale(.8); } }
+
+/* Photo skeletons: a soft rose shimmer until the photo has loaded, then the photo fades in. Sizes come from width/height, so nothing shifts. */
+.card-photo { background: var(--color-tint); }
+.card-photo img { position: relative; transition: transform var(--duration-reveal) var(--ease-out), opacity var(--duration-pop) ease; }
+.cat-photo img { transition: opacity var(--duration-pop) ease; }
+.card-photo::before { content: ""; position: absolute; inset: 0; width: 60%; background: linear-gradient(100deg, transparent, var(--color-tint-strong) 45%, var(--color-petal-light) 50%, var(--color-tint-strong) 55%, transparent); opacity: 0; transform: translate3d(-110%, 0, 0); pointer-events: none; }
+.cat-photo::before { content: ""; position: absolute; inset: 0; border-radius: var(--radius-circle); background: radial-gradient(circle at 35% 30%, var(--color-petal-light), var(--color-tint-strong) 70%); opacity: 0; pointer-events: none; }
+.card-photo.is-loading::before { opacity: 1; animation: shimmer var(--duration-shimmer) ease-in-out infinite; }
+.cat-photo.is-loading::before { opacity: 1; animation: shimmer-soft var(--duration-shimmer) ease-in-out infinite alternate; }
+.is-loading > img { opacity: 0; }
+@keyframes shimmer { to { transform: translate3d(220%, 0, 0); } }
+@keyframes shimmer-soft { from { opacity: .45; } to { opacity: 1; } }
+
+/* Category tiles lift on hover with a soft rose halo. */
+.cat-photo::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: var(--radius-circle); box-shadow: var(--shadow-lift); opacity: 0; transition: opacity var(--duration-move) ease; }
+.cat:hover .cat-photo::after, .cat:focus-visible .cat-photo::after { opacity: 1; }
+
+/* Header: on scroll it tucks up a little and gains a shadow. Height stays the same, so the page never shifts. */
+.site { transition: transform var(--duration-move) var(--ease-out); }
+.site::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: var(--header-shrink); background: var(--color-bg); }
+.site::after { content: ""; position: absolute; inset: 0; z-index: -1; box-shadow: var(--shadow-header); opacity: 0; transition: opacity var(--duration-move) ease; pointer-events: none; }
+.site .brand-mark { transform-origin: 0 50%; transition: transform var(--duration-move) var(--ease-out); }
+.site.is-scrolled { transform: translate3d(0, calc(-1 * var(--header-shrink)), 0); }
+.site.is-scrolled::after { opacity: 1; }
+.site.is-scrolled .brand-mark { transform: scale(.86); }
+
+/* Hero: corner sprays and falling petals. The photo and heading are never hidden. */
+main > .hero { position: relative; }
+.hero-text { position: relative; z-index: 2; }
+.hero-visual { position: relative; }
+.hero-spray { position: absolute; z-index: 1; width: var(--spray-size); height: auto; aspect-ratio: 5 / 4; pointer-events: none; }
+.hero-spray-a { top: calc(-1 * var(--space-24)); left: calc(var(--space-page) * -.6); }
+.hero-spray-b { right: calc(var(--space-page) * -.6); bottom: calc(-1 * var(--space-24)); transform: rotate(180deg); }
+.hero-petals { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.fall { position: absolute; top: calc(-1 * var(--space-24)); left: var(--x); animation: fall var(--dur, var(--duration-fall)) linear var(--delay, 0s) infinite; will-change: transform, opacity; }
+.fall .petal { display: block; width: var(--size-petal); height: calc(var(--size-petal) * 1.2); transform: scale(var(--s, 1)); animation: sway calc(var(--dur, var(--duration-fall)) / 4) ease-in-out var(--delay, 0s) infinite alternate; }
+.hero-petals.is-paused .fall, .hero-petals.is-paused .petal { animation-play-state: paused; }
+@keyframes fall {
+  0% { opacity: 0; transform: translate3d(0, 0, 0); }
+  10% { opacity: .85; }
+  85% { opacity: .85; }
+  100% { opacity: 0; transform: translate3d(0, var(--fall-h, 100vh), 0); }
+}
+@keyframes sway {
+  from { transform: translate3d(calc(-1 * var(--drift, var(--space-20))), 0, 0) rotate(-30deg) scale(var(--s, 1)); }
+  to { transform: translate3d(var(--drift, var(--space-20)), 0, 0) rotate(40deg) scale(var(--s, 1)); }
+}
+
+/* Product cards: on hover a few petals drift from the photo corner. */
+.card-petals { position: absolute; top: 0; right: 0; width: 45%; height: 45%; pointer-events: none; }
+.card-petals .petal { position: absolute; top: calc(-1 * var(--space-16)); right: var(--space-12); width: var(--size-petal); height: calc(var(--size-petal) * 1.2); opacity: 0; }
+.card-petals .petal:nth-child(1) { color: var(--color-petal); }
+.card-petals .petal:nth-child(2) { color: var(--color-bloom); right: var(--space-32); }
+.card-petals .petal:nth-child(3) { color: var(--color-petal-light); right: var(--space-4); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card:hover .card-petals .petal { animation: drift var(--duration-shimmer) var(--ease-out) forwards; }
+  .card:hover .card-petals .petal:nth-child(2) { animation-delay: 120ms; --dx: calc(-1 * var(--space-40)); --rot: -70deg; }
+  .card:hover .card-petals .petal:nth-child(3) { animation-delay: 240ms; --dx: calc(-1 * var(--space-12)); --rot: 120deg; }
+}
+@keyframes drift {
+  0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(0); }
+  20% { opacity: .95; }
+  100% { opacity: 0; transform: translate3d(var(--dx, calc(-1 * var(--space-24))), var(--space-72), 0) rotate(var(--rot, 80deg)); }
+}
+
+/* Add to cart: a burst of petals from the button, and the cart count pops. */
+.burst { position: fixed; z-index: 35; width: 0; height: 0; pointer-events: none; }
+.burst .petal { position: absolute; left: calc(var(--size-petal) / -2); top: calc(var(--size-petal) / -2); width: var(--size-petal); height: calc(var(--size-petal) * 1.2); }
+.count.is-pop { animation: pop var(--duration-pop) var(--ease-spring); }
+@keyframes pop { 40% { transform: scale(1.35); } }
+
+/* Buttons: a soft blossom opens where you press. */
+.ripple { position: absolute; z-index: -1; width: var(--r); height: var(--r); margin: calc(var(--r) / -2) 0 0 calc(var(--r) / -2); color: currentColor; opacity: 0; pointer-events: none; }
+.btn > .ico-sm, .btn > .ico { position: relative; }
+
+/* Section dividers: a wavy vine with blossoms between two hairlines. */
+main > .divider { display: flex; align-items: center; gap: var(--space-12); max-width: var(--size-content); margin: var(--space-section) auto 0; padding-inline: var(--space-page); }
+main > .divider::before, main > .divider::after { content: ""; flex: 1; border-top: 1px solid var(--color-tint-strong); }
+.divider-art { flex: none; width: var(--divider-art-width); height: var(--divider-height); overflow: visible; }
+main > .divider + section { margin-top: var(--space-40); }
+
+/* Payment trust strip (monochrome, no brand logos). */
+.trust { margin-top: var(--space-16); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-12) var(--space-20); padding: var(--space-14) var(--space-20); border: 1px solid var(--color-line); border-radius: var(--radius-card); }
+.trust-title { display: inline-flex; align-items: center; gap: var(--space-8); font-size: var(--font-size-small); font-weight: var(--font-weight-semibold); }
+.trust-title .ico-sm { color: var(--color-accent); }
+.trust-badges { display: flex; flex-wrap: wrap; gap: var(--space-8); }
+.trust-badges li { display: inline-flex; align-items: center; gap: var(--space-6); padding: var(--space-4) var(--space-12); border: 1px solid var(--color-line-strong); border-radius: var(--radius-pill); font-size: var(--font-size-small); font-weight: var(--font-weight-medium); color: var(--color-ink); }
+.trust-badges .ico-sm { color: var(--color-muted); }
+
+/* Special orders and how-to illustrations. */
+main > .khusus { position: relative; }
+.khusus-art { position: absolute; z-index: 1; top: calc(-1 * var(--space-48)); right: calc(var(--space-page) - var(--space-16)); width: var(--illustration-khusus); height: auto; aspect-ratio: 5 / 4; transform: scaleX(-1); pointer-events: none; }
+.cara-head { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-16); }
+.cara-art { flex: none; width: var(--illustration-cara); height: auto; aspect-ratio: 6 / 7; margin-bottom: calc(-1 * var(--space-16)); }
+
+/* Footer garland. */
+.kaki { position: relative; }
+.kaki { overflow-x: clip; }
+.garland { position: absolute; left: calc(-1 * var(--space-16)); top: calc(var(--garland-height) / -2); display: block; width: calc(100% + var(--space-32)); height: var(--garland-height); transform-origin: 50% 0; pointer-events: none; }
+
+/* Cart drawer: soft petal edge, slide in, and an illustrated empty state. */
+.drawer-edge { position: absolute; top: 0; bottom: 0; left: 0; z-index: 1; width: var(--drawer-edge); height: 100%; pointer-events: none; }
+.drawer[open] { animation: drawer-in var(--duration-reveal) var(--ease-out); }
+.drawer[open]::backdrop { animation: veil-in var(--duration-move) ease; }
+.drawer.is-closing { animation: drawer-out var(--duration-move) ease-in forwards; }
+.drawer.is-closing::backdrop { animation: veil-out var(--duration-move) ease forwards; }
+@keyframes drawer-in { from { transform: translate3d(100%, 0, 0); } }
+@keyframes drawer-out { to { transform: translate3d(100%, 0, 0); } }
+@keyframes veil-in { from { opacity: 0; } }
+@keyframes veil-out { to { opacity: 0; } }
+.empty-art { width: var(--illustration-empty); height: auto; aspect-ratio: 4 / 3; }
+.drawer-actions { display: grid; gap: var(--space-8); }
+
+/* ===== Second pass: more illustration. Static drawings here; all movement is in the no-preference block below. ===== */
+
+/* Hero butterfly near the bouquet (moves only while the hero is on screen: floral.js sets .is-live). */
+.butterfly { position: absolute; z-index: 2; left: 10%; top: 12%; width: var(--butterfly-size); aspect-ratio: 42 / 26; pointer-events: none; }
+.butterfly svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.bf-wing { transform-box: fill-box; transform-origin: 0 50%; }
+.bf-body { fill: none; stroke: var(--color-ink); stroke-width: 1.6; stroke-linecap: round; }
+
+/* Section headings: a small sprig beside the title. */
+.h-sprig { display: inline-block; width: var(--heading-sprig); height: calc(var(--heading-sprig) * 2 / 3); margin-left: var(--space-8); vertical-align: baseline; overflow: visible; transform-origin: 0 100%; }
+
+/* Categories: a ring of petals behind the photo that blooms on hover or focus. */
+.cat-ring { position: absolute; z-index: -1; left: -14%; top: -14%; width: 128%; height: 128%; overflow: visible; opacity: 0; transform: scale(.7) rotate(-40deg); pointer-events: none; }
+.cat:hover .cat-ring, .cat:focus-visible .cat-ring { opacity: 1; transform: none; }
+
+/* Reasons: each line icon sits in a small botanical vignette. */
+.usp-art { flex: none; width: var(--illustration-usp); height: var(--illustration-usp); overflow: visible; color: var(--color-accent); }
+.v-disc { fill: var(--color-tint); }
+.v-sprig, .v-bloom { transform-box: fill-box; }
+.v-sprig { transform-origin: 0 100%; }
+.v-bloom { transform-origin: 50% 50%; }
+
+/* Special-order tiles: florals tucked into the top corner. */
+.tile-corner { position: absolute; z-index: 1; top: 0; left: 0; width: var(--illustration-corner); height: auto; aspect-ratio: 1; transform-origin: 0 0; pointer-events: none; }
+
+/* How to order: a vine runs from step to step with a blossom at each one. */
+.cara-row li { --seq: 0; }
+.cara-row li:nth-child(2) { --seq: 1; }
+.cara-row li:nth-child(3) { --seq: 2; }
+.cara-row li:nth-child(4) { --seq: 3; }
+.step { position: relative; display: block; height: var(--step-bloom); margin-bottom: var(--space-12); }
+.step-bloom { position: absolute; z-index: 1; left: 0; top: 0; width: var(--step-bloom); height: var(--step-bloom); border-radius: var(--radius-circle); background: var(--color-bg); overflow: visible; }
+.step-vine { position: absolute; left: calc(var(--step-bloom) / 2); top: calc((var(--step-bloom) - var(--step-vine)) / 2); width: calc(100% + var(--space-24)); height: var(--step-vine); overflow: visible; }
+.step-vine path { stroke-width: 2; stroke-dasharray: 1; }
+.cara-row li:last-child .step-vine { width: 55%; }
+
+/* Delivery: a little rose van with a bouquet on the roof, driving at dawn; map pins on the price list. */
+.antar-scene { display: block; width: var(--illustration-scene); height: auto; aspect-ratio: 3 / 1; margin-top: var(--space-20); }
+.sc-sun { fill: var(--color-pollen); }
+.sc-city { fill: var(--color-tint-strong); }
+.sc-road { fill: none; stroke: var(--color-line-strong); stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 10 8; }
+.sc-body { fill: var(--color-accent); }
+.sc-glass { fill: var(--color-tint); }
+.sc-logo { color: var(--color-on-accent); }
+.sc-wheel circle { fill: var(--color-ink); }
+.sc-wheel path { fill: none; stroke: var(--color-bg); stroke-width: 1.6; stroke-linecap: round; }
+.sc-wind { fill: none; stroke: var(--color-petal); stroke-width: 2; stroke-linecap: round; opacity: 0; }
+.sc-wheel, .sc-ride, .sc-sun, .sc-van, .sc-wind, .pin-bloom { transform-box: fill-box; transform-origin: 50% 50%; }
+
+/* Empty search result. */
+.es-ground { fill: var(--color-tint); }
+.es-lens circle { fill: var(--color-bg); fill-opacity: .5; stroke: var(--color-accent); stroke-width: 3; }
+.es-lens path { fill: none; stroke: var(--color-accent); stroke-width: 5; stroke-linecap: round; }
+.es-lens, .es-tulip, .es-petal { transform-box: fill-box; }
+.es-lens { transform-origin: 30% 30%; }
+.es-tulip { transform-origin: 50% 100%; }
+.es-petal { transform-origin: 50% 50%; }
+
+/* Section dividers draw outward from the centre rose. */
+main > .divider::before { transform-origin: 100% 50%; }
+main > .divider::after { transform-origin: 0 50%; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Butterfly: slow drift loop plus wing beats, only while visible. */
+  .butterfly.is-live { animation: bf-drift var(--duration-drift) ease-in-out infinite; }
+  .butterfly.is-live .bf-wing { animation: bf-flap var(--duration-move) ease-in-out infinite alternate; }
+
+  /* Heading sprigs unfurl when the heading scrolls into view (floral.js adds .is-open). */
+  .h-sprig { transition: transform var(--duration-reveal) var(--ease-spring), opacity var(--duration-move) ease; }
+  .js .h-sprig:not(.is-open) { opacity: 0; transform: rotate(-50deg) scale(.2); }
+
+  .cat-ring { transition: transform var(--duration-reveal) var(--ease-spring), opacity var(--duration-move) ease; }
+
+  /* Reveal animations hook onto main.js's .in and use backwards fill, so hover styles still apply afterwards. */
+  .js .usp-row li.in .v-sprig { animation: unfurl var(--duration-reveal) var(--ease-spring) calc(var(--d, 0ms) + var(--duration-move)) backwards; }
+  .js .usp-row li.in .v-bloom { animation: bloom-open var(--duration-reveal) var(--ease-spring) calc(var(--d, 0ms) + var(--duration-reveal)) backwards; }
+  .v-sprig, .v-bloom { transition: transform var(--duration-reveal) var(--ease-out); }
+  .usp-row li:hover .v-bloom { transform: rotate(72deg); }
+  .usp-row li:hover .v-sprig { transform: rotate(-8deg); }
+
+  .js .tile.in .tile-corner { animation: corner-in var(--duration-reveal) var(--ease-spring) calc(var(--d, 0ms) + var(--duration-move)) backwards; }
+  .tile-corner { transition: transform var(--duration-reveal) var(--ease-out); }
+  .tile:hover .tile-corner, .tile:focus-visible .tile-corner { transform: rotate(4deg) scale(1.06); }
+
+  .js .cara-row li.in .step-bloom { animation: bloom-open var(--duration-reveal) var(--ease-spring) calc(var(--seq) * var(--duration-step) + var(--duration-move)) backwards; }
+  .js .cara-row li.in .step-vine path { animation: draw var(--duration-step) ease-in-out calc(var(--seq) * var(--duration-step) + var(--duration-reveal)) backwards; }
+  .js .cara-row li.in .step-vine use { animation: fade-in var(--duration-move) ease calc((var(--seq) + 1) * var(--duration-step) + var(--duration-move)) backwards; }
+  .js .cara-row li.in .step::after { animation: grow-y var(--duration-step) ease-in-out var(--duration-reveal) backwards; }
+  .step-bloom { transition: transform var(--duration-reveal) var(--ease-out); }
+  .cara-row li:hover .step-bloom { transform: rotate(36deg); }
+
+  .js .antar-scene.in .sc-van { animation: drive-in var(--duration-draw) var(--ease-out) var(--duration-move) backwards; }
+  .js .antar-scene.in .sc-sun { animation: sun-rise var(--duration-draw) var(--ease-out) backwards; }
+  .antar-scene.is-live .sc-wheel { animation: spin var(--duration-reveal) linear infinite; }
+  .antar-scene.is-live .sc-ride { animation: bob var(--duration-move) ease-in-out infinite alternate; }
+  .antar-scene.is-live .sc-wind { animation: wind var(--duration-shimmer) ease-out infinite; }
+  .js .ongkir li.in .pin { animation: pin-drop var(--duration-reveal) var(--ease-spring) calc(var(--d, 0ms) + var(--duration-move)) backwards; }
+  .js .ongkir li.in .pin-bloom { animation: bloom-open var(--duration-reveal) var(--ease-spring) calc(var(--d, 0ms) + var(--duration-reveal)) backwards; }
+  .pin-bloom { transition: transform var(--duration-reveal) var(--ease-out); }
+  .ongkir li:hover .pin-bloom { transform: rotate(72deg); }
+
+  .js main > .divider.in .divider-art { animation: vine-draw var(--duration-draw) var(--ease-out) backwards; }
+  .js main > .divider.in::before, .js main > .divider.in::after { animation: line-grow var(--duration-draw) var(--ease-out) var(--duration-move) backwards; }
+
+  .garland.is-live { animation: garland-sway var(--duration-sway) ease-in-out infinite alternate; }
+
+  /* Empty search result: the tulip peeks up, a petal drops, the lens looks around a few times. */
+  .es-lens { animation: lens-search var(--duration-draw) ease-in-out 3 alternate; }
+  .es-tulip { animation: tulip-peek var(--duration-reveal) var(--ease-spring) var(--duration-move) backwards; }
+  .es-petal { animation: petal-drop var(--duration-draw) var(--ease-out) var(--duration-reveal) backwards; }
+
+  /* Cart lines slide in when added; the quantity pops. Removal and reflow are animated in main.js. */
+  .line.is-new { animation: line-in var(--duration-reveal) var(--ease-out) calc(var(--i, 0) * var(--duration-press) / 3 + var(--duration-press)) backwards; }
+  .stepper output.is-bump { animation: pop var(--duration-pop) var(--ease-spring); }
+  .lines-empty .empty-art { animation: bloom-open var(--duration-reveal) var(--ease-spring) backwards; }
+}
+
+@keyframes bf-flap { to { transform: scaleX(.3); } }
+@keyframes bf-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-8deg); }
+  20% { transform: translate3d(var(--space-40), calc(-1 * var(--space-24)), 0) rotate(10deg); }
+  45% { transform: translate3d(var(--space-80), calc(-1 * var(--space-6)), 0) rotate(16deg); }
+  70% { transform: translate3d(var(--space-56), var(--space-24), 0) rotate(-14deg); }
+  85% { transform: translate3d(var(--space-16), var(--space-12), 0) rotate(-4deg); }
+}
+@keyframes unfurl { from { opacity: 0; transform: rotate(-40deg) scale(0); } }
+@keyframes bloom-open { from { opacity: 0; transform: rotate(-120deg) scale(0); } }
+@keyframes corner-in { from { opacity: 0; transform: rotate(-25deg) scale(.3); } }
+@keyframes draw { from { stroke-dashoffset: 1; } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes grow-y { from { transform: scaleY(0); } }
+@keyframes drive-in { from { opacity: 0; transform: translate3d(calc(-1 * var(--space-96)), 0, 0); } }
+@keyframes sun-rise { from { transform: translate3d(0, var(--space-24), 0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes bob { to { transform: translate3d(0, calc(-1 * var(--space-2)), 0); } }
+@keyframes wind {
+  0% { opacity: 0; transform: translate3d(var(--space-8), 0, 0); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate3d(calc(-1 * var(--space-24)), 0, 0); }
+}
+@keyframes pin-drop { from { opacity: 0; transform: translate3d(0, calc(-1 * var(--space-12)), 0); } }
+@keyframes vine-draw { from { clip-path: inset(-50% 50% -50% 50%); } to { clip-path: inset(-50% 0 -50% 0); } }
+@keyframes line-grow { from { transform: scaleX(0); } }
+@keyframes garland-sway {
+  from { transform: translate3d(calc(-1 * var(--space-8)), 0, 0) rotate(-.4deg); }
+  to { transform: translate3d(var(--space-8), 0, 0) rotate(.4deg); }
+}
+@keyframes lens-search { from { transform: translate3d(calc(-1 * var(--space-20)), var(--space-4), 0) rotate(-10deg); } }
+@keyframes tulip-peek { from { opacity: 0; transform: translate3d(0, var(--space-16), 0) scale(.5); } }
+@keyframes petal-drop { from { opacity: 0; transform: translate3d(calc(-1 * var(--space-16)), calc(-1 * var(--space-40)), 0) rotate(-90deg); } }
+@keyframes line-in { from { opacity: 0; transform: translate3d(var(--space-24), 0, 0); } }
+
+@media (max-width: 1080px) {
+  .cara-row li:nth-child(odd) { --seq: 0; }
+  .cara-row li:nth-child(2n) { --seq: 1; }
+  .cara-row li:nth-child(2n) .step-vine { width: 55%; }
+}
+
+@media (max-width: 820px) {
+  /* Room for the petal ring inside the sideways-scrolling category row (no change in position). */
+  .cat-row { padding-block: var(--space-16); margin-top: var(--space-8); margin-bottom: calc(-1 * var(--space-16)); }
+  .butterfly { left: 8%; top: 10%; }
+}
+
+@media (max-width: 560px) {
+  /* How to order becomes a vertical path: blossom on the left, a stem growing down to the next step. */
+  .cara-row li { display: grid; grid-template-columns: var(--step-bloom) minmax(0, 1fr); column-gap: var(--space-14); }
+  .cara-row li:nth-child(n) { --seq: 0; }
+  .cara-row li > h3, .cara-row li > p { grid-column: 2; }
+  .cara-row li > h3 { padding-top: var(--space-10); }
+  .step { grid-row: 1 / span 2; height: auto; margin: 0; }
+  .step-vine { display: none; }
+  .step::after { content: ""; position: absolute; left: calc(var(--step-bloom) / 2 - 1px); top: var(--step-bloom); bottom: calc(-1 * var(--space-16)); width: 2px; border-radius: var(--radius-pill); background: var(--color-leaf); transform-origin: 50% 0; }
+  .cara-row li:last-child .step::after { display: none; }
+}
+
+@media (max-width: 820px) {
+  .site.is-scrolled { transform: translate3d(0, calc(-1 * var(--space-4)), 0); }
+  .hero-spray-b { display: none; }
+  .hero-spray-a { top: calc(-1 * var(--space-12)); }
+}
+
+@media (max-width: 560px) {
+  .trust { padding: var(--space-14) var(--space-16); }
+  .trust-badges li { padding-inline: var(--space-10); }
+  .cara-art { margin-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Reduced variant: no preloader, petals, bursts or ripples; photos, header and drawer only fade. */
+  .ks-preload .preload, .hero-petals, .card-petals, .burst, .ripple, .butterfly { display: none; }
+  /* Second pass: every drawing is shown in its finished state; the petal ring only fades in. */
+  .cat-ring { transform: none; transition: opacity var(--duration-color) ease; }
+  .card-photo.is-loading::before { animation: none; transform: none; width: 100%; background: var(--color-tint-strong); }
+  .cat-photo.is-loading::before { animation: none; }
+  .site, .site .brand-mark { transition: none; }
+  .site.is-scrolled, .site.is-scrolled .brand-mark { transform: none; }
+  .count.is-pop { animation: pop-fade var(--duration-pop) ease; }
+  .drawer[open] { animation: veil-in var(--duration-color) ease; }
+  .drawer.is-closing { animation: veil-out var(--duration-color) ease forwards; }
+}
+@keyframes pop-fade { 40% { opacity: .5; } }

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Kembang Subuh</title>
+<meta name="description" content="Lengkapi data pengiriman dan bayar pesanan bunga Kembang Subuh dengan QRIS, e-wallet, virtual account, atau kartu kredit.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="design/tokens.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="checkout.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="co-page">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 64 44">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(32 38)">
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(-64)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(-32)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(32)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(64)"/>
+      </g>
+      <path d="M2 38H62"/>
+    </g>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></g></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 7V4h4v3M6 7l1 13h10l1-13"/></g></symbol>
+  <!-- Ikon metode bayar: ilustrasi dua warna (kelas pm-*), tanpa logo merek -->
+  <symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect class="pm-f" x="3.5" y="3.5" width="6.5" height="6.5" rx="1.4"/><rect class="pm-f" x="14" y="3.5" width="6.5" height="6.5" rx="1.4"/><rect class="pm-f" x="3.5" y="14" width="6.5" height="6.5" rx="1.4"/><rect class="pm-d" x="5.7" y="5.7" width="2.1" height="2.1" rx=".4"/><rect class="pm-d" x="16.2" y="5.7" width="2.1" height="2.1" rx=".4"/><rect class="pm-d" x="5.7" y="16.2" width="2.1" height="2.1" rx=".4"/><path d="M14 14h2.6v2.6H14zM18.4 18.4h2.1v2.1M20.5 14v1.4M14 20.5h1.6"/></g></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="pm-p" d="M13.5 8c-.6-2.6.6-4.6 2.8-5.3.6 2.3-.5 4.2-2.8 5.3Z"/><path d="M4 8.2A2.6 2.6 0 0 1 6.6 5.6H11"/><rect class="pm-f" x="4" y="8" width="16" height="11.5" rx="2.6"/><path class="pm-f2" d="M15 11.6h5v4h-5a2 2 0 0 1 0-4Z"/><circle class="pm-d" cx="15.6" cy="13.6" r=".9"/></g></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="pm-f" d="M3 9.6 12 4.2l9 5.4Z"/><circle class="pm-d" cx="12" cy="7.6" r=".95"/><path d="M5.5 10.6v6.6M9.8 10.6v6.6M14.2 10.6v6.6M18.5 10.6v6.6"/><path class="pm-f2" d="M3.8 17.4h16.4v2.6H3.8z"/></g></symbol>
+  <symbol id="i-cc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect class="pm-f" x="2.8" y="5.4" width="18.4" height="13.2" rx="2.6"/><path d="M2.8 9.6h18.4"/><rect class="pm-f2" x="5.6" y="12.2" width="4" height="3.2" rx=".8"/><path d="M13 15h4.4"/></g></symbol>
+  <!-- Centang daun untuk kolom yang sudah benar -->
+  <symbol id="i-leafok" viewBox="0 0 20 20"><path class="lk-leaf" d="M3 17C3 8.6 8.6 3 17 3c0 8.4-5.6 14-14 14Z"/><path class="lk-tick" d="M6.8 10.4l2.3 2.3 4.2-4.6"/></symbol>
+  <symbol id="bloom" viewBox="0 0 40 40">
+    <g transform="translate(20 20)">
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(72)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(144)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(216)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(288)"/>
+      <circle r="3.6" class="ctr"/>
+    </g>
+  </symbol>
+</svg>
+
+<a class="co-skip" href="#co-main">Langsung ke isi</a>
+
+<header class="co-head">
+  <div class="co-head-row">
+    <a class="co-brand" href="index.html" aria-label="Kembang Subuh, kembali ke beranda">
+      <svg class="co-brand-mark" aria-hidden="true"><use href="#logo"></use></svg>
+      <span>Kembang Subuh</span>
+    </a>
+    <p class="co-secure"><svg class="co-ico-sm" aria-hidden="true"><use href="#i-lock"></use></svg><span>Pembayaran aman</span></p>
+    <a class="co-iconlink" href="index.html#koleksi"><svg class="co-ico" aria-hidden="true"><use href="#i-back"></use></svg><span>Lanjut belanja</span></a>
+  </div>
+</header>
+
+<main id="co-main" class="co-main">
+  <div class="co-top">
+    <h1 class="co-title">Selesaikan pesanan</h1>
+    <ol class="co-steps" aria-label="Langkah pemesanan">
+      <li class="co-step is-done" data-step="1">
+        <svg class="co-step-mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+        <span><span class="co-sr">Selesai: </span>Keranjang</span>
+      </li>
+      <li class="co-step is-current" data-step="2" aria-current="step">
+        <svg class="co-step-mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+        <span>Data pengiriman</span>
+      </li>
+      <li class="co-step" data-step="3">
+        <svg class="co-step-mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+        <span>Pembayaran</span>
+      </li>
+    </ol>
+  </div>
+
+  <div class="co-notice" id="co-notice" role="status" aria-live="polite"></div>
+
+  <section class="co-empty" id="co-empty" hidden aria-labelledby="empty-title">
+    <svg class="co-empty-art" viewBox="0 0 200 160" aria-hidden="true">
+      <ellipse cx="100" cy="146" rx="70" ry="8" class="ea-shadow"/>
+      <path d="M62 78h76l-10 64H72z" class="ea-pot"/>
+      <path d="M58 72h84v12H58z" class="ea-rim"/>
+      <path d="M100 72V40" class="ea-stem"/>
+      <path d="M100 58c-10-2-16-10-16-18 9 1 15 7 16 18Z" class="ea-leaf"/>
+      <path d="M100 52c9-3 14-10 14-17-8 1-13 7-14 17Z" class="ea-leaf"/>
+      <circle cx="100" cy="34" r="6" class="ea-bud"/>
+    </svg>
+    <h2 id="empty-title">Keranjangmu masih kosong</h2>
+    <p>Pot ini menunggu bunga pilihanmu. Yuk, pilih buket dulu, nanti kembali ke sini untuk membayar.</p>
+    <a class="btn" href="index.html#koleksi">Pilih bunga</a>
+  </section>
+
+  <div class="co-grid" id="co-grid">
+    <form class="co-form" id="co-form" novalidate aria-describedby="form-note">
+      <p class="co-form-note" id="form-note">Kolom bertanda <span aria-hidden="true">*</span><span class="co-sr">bintang</span> wajib diisi.</p>
+
+      <fieldset class="co-card">
+        <legend class="co-legend"><span class="co-num" aria-hidden="true">1</span>Data pemesan</legend>
+        <div class="co-fields">
+          <div class="co-field">
+            <label for="f-nama">Nama pemesan <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><input id="f-nama" name="customer_name" type="text" autocomplete="name" required minlength="2" maxlength="120" aria-describedby="f-nama-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-err" id="f-nama-err"></p>
+          </div>
+          <div class="co-field">
+            <label for="f-wa">No. WhatsApp pemesan <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><input id="f-wa" name="customer_phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="0812 3456 7890" aria-describedby="f-wa-hint f-wa-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-hint" id="f-wa-hint">Untuk kabar pesanan dan foto bunga sebelum diantar.</p>
+            <p class="co-err" id="f-wa-err"></p>
+          </div>
+          <div class="co-field co-field-wide">
+            <label for="f-email">Email <span class="co-opt">(opsional)</span></label>
+            <div class="co-ctl"><input id="f-email" name="customer_email" type="email" inputmode="email" autocomplete="email" maxlength="160" aria-describedby="f-email-hint f-email-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-hint" id="f-email-hint">Bukti bayar juga dikirim ke email ini.</p>
+            <p class="co-err" id="f-email-err"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="co-card">
+        <legend class="co-legend"><span class="co-num" aria-hidden="true">2</span>Penerima &amp; alamat</legend>
+        <div class="co-fields">
+          <div class="co-field">
+            <label for="f-penerima">Nama penerima <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><input id="f-penerima" name="recipient_name" type="text" autocomplete="shipping name" required minlength="2" maxlength="120" aria-describedby="f-penerima-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-err" id="f-penerima-err"></p>
+          </div>
+          <div class="co-field">
+            <label for="f-penerima-wa">No. HP penerima <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><input id="f-penerima-wa" name="recipient_phone" type="tel" inputmode="tel" autocomplete="shipping tel" required maxlength="20" placeholder="0812 3456 7890" aria-describedby="f-penerima-wa-hint f-penerima-wa-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-hint" id="f-penerima-wa-hint">Kurir menghubungi nomor ini saat tiba.</p>
+            <p class="co-err" id="f-penerima-wa-err"></p>
+          </div>
+          <fieldset class="co-field co-field-wide co-slots co-zones" id="f-zone" aria-describedby="f-zone-hint f-zone-err">
+            <legend>Daerah antar <span aria-hidden="true">*</span></legend>
+            <div class="co-slot-row co-zone-row" id="zone-row"></div>
+            <p class="co-hint" id="f-zone-hint">Ongkir dihitung dari daerah ini. Kurir berangkat pukul 15.00.</p>
+            <p class="co-err" id="f-zone-err"></p>
+          </fieldset>
+          <div class="co-field co-field-wide">
+            <label for="f-alamat">Alamat lengkap <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><textarea id="f-alamat" name="address" rows="3" autocomplete="shipping street-address" required minlength="15" maxlength="500" aria-describedby="f-alamat-hint f-alamat-err"></textarea><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-hint" id="f-alamat-hint">Nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, dan patokan.</p>
+            <p class="co-err" id="f-alamat-err"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="co-card">
+        <legend class="co-legend"><span class="co-num" aria-hidden="true">3</span>Jadwal antar</legend>
+        <div class="co-fields">
+          <div class="co-field co-field-wide">
+            <label for="f-tanggal">Tanggal antar <span aria-hidden="true">*</span></label>
+            <div class="co-ctl"><input id="f-tanggal" name="delivery_date" type="date" required aria-describedby="f-tanggal-hint f-tanggal-err"><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+            <p class="co-hint" id="f-tanggal-hint">Pesan sebelum 13.00 WIB untuk antar hari ini (waktu sore).</p>
+            <p class="co-err" id="f-tanggal-err"></p>
+          </div>
+          <fieldset class="co-field co-field-wide co-slots" id="f-slot" aria-describedby="f-slot-err">
+            <legend>Waktu antar <span aria-hidden="true">*</span></legend>
+            <div class="co-slot-row">
+              <label class="co-slot"><input type="radio" name="delivery_slot" value="pagi" required><span><b>Pagi</b> 09.00–12.00</span></label>
+              <label class="co-slot"><input type="radio" name="delivery_slot" value="siang"><span><b>Siang</b> 12.00–15.00</span></label>
+              <label class="co-slot"><input type="radio" name="delivery_slot" value="sore"><span><b>Sore</b> 15.00–18.00</span></label>
+            </div>
+            <p class="co-err" id="f-slot-err"></p>
+          </fieldset>
+        </div>
+      </fieldset>
+
+      <fieldset class="co-card">
+        <legend class="co-legend"><span class="co-num" aria-hidden="true">4</span>Kartu ucapan <span class="co-opt">gratis</span></legend>
+        <div class="co-field">
+          <label for="f-kartu">Tulisan di kartu <span class="co-opt">(opsional)</span></label>
+          <div class="co-ctl"><textarea id="f-kartu" name="card_message" rows="3" maxlength="160" placeholder="Selamat ulang tahun, Ibu. Sehat selalu." aria-describedby="f-kartu-count f-kartu-err"></textarea><svg class="co-ok" viewBox="0 0 20 20" aria-hidden="true"><use href="#i-leafok"></use></svg></div>
+          <p class="co-hint co-count" id="f-kartu-count"><span id="kartu-left">160</span> huruf tersisa</p>
+          <p class="co-err" id="f-kartu-err"></p>
+        </div>
+      </fieldset>
+    </form>
+
+    <aside class="co-summary" aria-labelledby="sum-title">
+      <div class="co-card co-sum-card">
+        <h2 class="co-sum-title" id="sum-title">Ringkasan pesanan</h2>
+        <ul class="co-lines" id="co-lines" aria-live="polite" aria-busy="true">
+          <li class="co-line co-skel" aria-hidden="true"><span></span><span></span></li>
+          <li class="co-line co-skel" aria-hidden="true"><span></span><span></span></li>
+        </ul>
+        <dl class="co-totals">
+          <div><dt>Subtotal</dt><dd id="t-sub">Rp –</dd></div>
+          <div><dt>Ongkos antar <span class="co-opt" id="t-zone"></span></dt><dd id="t-ship">Rp –</dd></div>
+          <div class="co-grand"><dt>Total</dt><dd id="t-total">Rp –</dd></div>
+        </dl>
+
+        <div class="co-pay">
+          <p class="co-pay-title">Bisa bayar dengan</p>
+          <ul class="co-chips" aria-label="Metode pembayaran yang tersedia">
+            <li><svg class="co-ico-sm" aria-hidden="true"><use href="#i-qr"></use></svg>QRIS</li>
+            <li><svg class="co-ico-sm" aria-hidden="true"><use href="#i-wallet"></use></svg>GoPay / ShopeePay</li>
+            <li><svg class="co-ico-sm" aria-hidden="true"><use href="#i-bank"></use></svg>Virtual Account bank</li>
+            <li><svg class="co-ico-sm" aria-hidden="true"><use href="#i-cc"></use></svg>Kartu kredit</li>
+          </ul>
+        </div>
+
+        <p class="co-submit-err" id="co-submit-err" role="alert"></p>
+        <button class="btn btn-full co-pay-btn" id="co-pay" type="submit" form="co-form" disabled>
+          <svg class="co-spin" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+          <span class="co-pay-label">Bayar sekarang</span>
+        </button>
+        <p class="co-fine"><svg class="co-ico-sm" aria-hidden="true"><use href="#i-lock"></use></svg><span>Pembayaran diproses Midtrans. Kami tidak menyimpan data kartumu.</span></p>
+        <a class="co-help" href="https://wa.me/6281200000000?text=Halo%20Kembang%20Subuh%2C%20saya%20butuh%20bantuan%20checkout."><svg class="co-ico" aria-hidden="true"><use href="#wa"></use></svg><span>Butuh bantuan? Chat WhatsApp</span></a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<dialog class="co-sheet" id="demo-sheet" aria-labelledby="demo-title" aria-describedby="demo-desc">
+  <div class="co-sheet-head">
+    <p class="co-badge">Mode uji — gateway belum dihubungkan</p>
+    <button type="button" class="co-x" id="demo-close" aria-label="Tutup, bayar nanti"><svg class="co-ico" aria-hidden="true"><use href="#i-close"></use></svg></button>
+  </div>
+  <h2 id="demo-title">Simulasi pembayaran</h2>
+  <p id="demo-desc" class="co-sheet-desc">Pesanan <b id="demo-code">–</b> sudah tersimpan. Tidak ada uang yang ditarik di mode ini.</p>
+  <p class="co-sheet-total">Total <b id="demo-total">Rp –</b></p>
+  <fieldset class="co-methods">
+    <legend>Pilih metode</legend>
+    <label class="co-method"><input type="radio" name="demo-method" value="qris" checked><svg class="co-ico" aria-hidden="true"><use href="#i-qr"></use></svg><span>QRIS</span></label>
+    <label class="co-method"><input type="radio" name="demo-method" value="gopay"><svg class="co-ico" aria-hidden="true"><use href="#i-wallet"></use></svg><span>GoPay</span></label>
+    <label class="co-method"><input type="radio" name="demo-method" value="shopeepay"><svg class="co-ico" aria-hidden="true"><use href="#i-wallet"></use></svg><span>ShopeePay</span></label>
+    <label class="co-method"><input type="radio" name="demo-method" value="bank_transfer"><svg class="co-ico" aria-hidden="true"><use href="#i-bank"></use></svg><span>Virtual Account</span></label>
+    <label class="co-method"><input type="radio" name="demo-method" value="credit_card"><svg class="co-ico" aria-hidden="true"><use href="#i-cc"></use></svg><span>Kartu kredit</span></label>
+  </fieldset>
+  <p class="co-submit-err" id="demo-err" role="alert"></p>
+  <div class="co-sheet-actions">
+    <button type="button" class="btn btn-full co-pay-btn" id="demo-ok">
+      <svg class="co-spin" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+      <span class="co-pay-label">Simulasikan bayar berhasil</span>
+    </button>
+    <button type="button" class="btn btn-full co-btn-ghost" id="demo-fail">Simulasikan gagal</button>
+  </div>
+</dialog>
+
+<script src="checkout.js" defer></script>
+</body>
+</html>

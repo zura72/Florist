@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status pesanan | Kembang Subuh</title>
+<meta name="description" content="Lihat status pembayaran dan pengantaran pesanan bunga Kembang Subuh.">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="design/tokens.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body class="co-page">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 64 44">
+    <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(32 38)">
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(-64)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(-32)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(32)"/>
+        <path d="M0 0C-6.5-9-6.5-22 0-34C6.5-22 6.5-9 0 0Z" transform="rotate(64)"/>
+      </g>
+      <path d="M2 38H62"/>
+    </g>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+  <!-- Kelopak untuk hujan kelopak saat lunas -->
+  <symbol id="confetti-petal" viewBox="0 0 14 18"><path fill="currentColor" d="M7 17C1.5 13 1 6 7 1c6 5 5.5 12 0 16Z"/></symbol>
+  <!-- Ikon linimasa pesanan (garis + isian lembut kelas tl-f) -->
+  <symbol id="tl-pay" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect class="tl-f" x="3" y="6" width="18" height="12.5" rx="2.6"/><path d="M8 12.4l2.6 2.6L16 9.6"/></g></symbol>
+  <symbol id="tl-arrange" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path class="tl-f" d="M7.5 12.5h9L12 21.5Z"/><circle class="tl-f" cx="8.6" cy="8.6" r="2.6"/><circle class="tl-f" cx="15.4" cy="8.6" r="2.6"/><circle class="tl-f" cx="12" cy="5.2" r="2.6"/></g></symbol>
+  <symbol id="tl-ride" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path class="tl-f" d="M2.8 7h10.6v9.6H2.8z"/><path d="M13.4 10.4h4l3 3v3.2h-7"/><circle cx="6.8" cy="17.4" r="1.8"/><circle cx="17" cy="17.4" r="1.8"/><path d="M5.6 11.6c.6-1.6 2.6-1.6 3.2 0-.6 1.6-2.6 1.6-3.2 0Z"/></g></symbol>
+  <symbol id="tl-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path class="tl-f" d="M4 11 12 4.6l8 6.4v9H4Z"/><path d="M12 17.4s-3.2-1.9-3.2-3.8a1.6 1.6 0 0 1 3.2-.6 1.6 1.6 0 0 1 3.2.6c0 1.9-3.2 3.8-3.2 3.8Z"/></g></symbol>
+  <symbol id="bloom" viewBox="0 0 40 40">
+    <g transform="translate(20 20)">
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(72)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(144)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(216)"/>
+      <path class="pt" d="M0 0C-5-4-5-12 0-16C5-12 5-4 0 0Z" transform="rotate(288)"/>
+      <circle r="3.6" class="ctr"/>
+    </g>
+  </symbol>
+</svg>
+
+<a class="co-skip" href="#co-main">Langsung ke isi</a>
+
+<header class="co-head">
+  <div class="co-head-row">
+    <a class="co-brand" href="index.html" aria-label="Kembang Subuh, kembali ke beranda">
+      <svg class="co-brand-mark" aria-hidden="true"><use href="#logo"></use></svg>
+      <span>Kembang Subuh</span>
+    </a>
+    <a class="co-iconlink" href="index.html#koleksi"><svg class="co-ico" aria-hidden="true"><use href="#i-back"></use></svg><span>Belanja lagi</span></a>
+  </div>
+</header>
+
+<main id="co-main" class="co-main ps-main">
+  <p class="co-sr" id="ps-live" role="status" aria-live="polite"></p>
+
+  <section class="ps-card" id="ps-card" aria-labelledby="ps-title" aria-busy="true">
+    <div class="ps-stage" id="ps-stage">
+    <!-- Berhasil: bunga mekar -->
+    <svg class="ps-art" id="art-paid" viewBox="0 0 168 168" aria-hidden="true" hidden>
+      <ellipse class="ps-ground" cx="84" cy="156" rx="46" ry="6"/>
+      <path class="ps-stem" d="M84 154V86"/>
+      <path class="ps-leaf" d="M84 128c-14-2-22-12-22-22 12 1 21 9 22 22Z"/>
+      <path class="ps-leaf" d="M84 118c13-3 20-12 20-21-11 1-19 9-20 21Z"/>
+      <g transform="translate(84 74)">
+        <g><path class="ps-petal" style="animation-delay:0s" d="M0 0C-13-10-13-31 0-42C13-31 13-10 0 0Z"/></g>
+        <g transform="rotate(72)"><path class="ps-petal" style="animation-delay:.08s" d="M0 0C-13-10-13-31 0-42C13-31 13-10 0 0Z"/></g>
+        <g transform="rotate(144)"><path class="ps-petal" style="animation-delay:.16s" d="M0 0C-13-10-13-31 0-42C13-31 13-10 0 0Z"/></g>
+        <g transform="rotate(216)"><path class="ps-petal" style="animation-delay:.24s" d="M0 0C-13-10-13-31 0-42C13-31 13-10 0 0Z"/></g>
+        <g transform="rotate(288)"><path class="ps-petal" style="animation-delay:.32s" d="M0 0C-13-10-13-31 0-42C13-31 13-10 0 0Z"/></g>
+        <g class="ps-petal-in"><circle r="11"/></g>
+        <path class="ps-heart" d="M-5 0l3.5 3.5L5.5-4"/>
+      </g>
+      <circle class="ps-spark" cx="30" cy="40" r="4" style="animation-delay:.55s"/>
+      <circle class="ps-spark" cx="140" cy="34" r="3" style="animation-delay:.7s"/>
+      <circle class="ps-spark" cx="136" cy="104" r="3.5" style="animation-delay:.85s"/>
+    </svg>
+
+    <!-- Menunggu: kuncup bergoyang pelan -->
+    <svg class="ps-art" id="art-pending" viewBox="0 0 168 168" aria-hidden="true" hidden>
+      <ellipse class="ps-ground" cx="84" cy="156" rx="46" ry="6"/>
+      <circle class="ps-ring" cx="84" cy="62" r="36"/>
+      <circle class="ps-ring" cx="84" cy="62" r="36"/>
+      <g class="ps-sway">
+        <path class="ps-stem" d="M84 154V78"/>
+        <path class="ps-leaf" d="M84 130c-14-2-22-12-22-22 12 1 21 9 22 22Z"/>
+        <path class="ps-leaf" d="M84 116c13-3 20-12 20-21-11 1-19 9-20 21Z"/>
+        <path class="ps-petal" d="M84 82c-14-6-18-24-6-42 4 8 6 10 6 10s2-2 6-10c12 18 8 36-6 42Z"/>
+        <path class="ps-leaf" d="M84 84c-6 0-12-4-14-10 6-1 11 2 14 10Zm0 0c6 0 12-4 14-10-6-1-11 2-14 10Z"/>
+      </g>
+    </svg>
+
+    <!-- Gagal/kedaluwarsa: bunga layu -->
+    <svg class="ps-art ps-art-fail" id="art-failed" viewBox="0 0 168 168" aria-hidden="true" hidden>
+      <ellipse class="ps-ground" cx="84" cy="156" rx="46" ry="6"/>
+      <path class="ps-wilt-stem" d="M84 154V104c0-26 18-38 34-30"/>
+      <path class="ps-leaf" d="M84 132c-13-2-20-11-20-20 11 1 19 8 20 20Z" opacity=".5"/>
+      <g class="ps-droop">
+        <g transform="translate(120 88) rotate(150)">
+          <path class="ps-wilt" d="M0 0C-9-7-9-22 0-30C9-22 9-7 0 0Z" transform="rotate(-36)"/>
+          <path class="ps-wilt" d="M0 0C-9-7-9-22 0-30C9-22 9-7 0 0Z"/>
+          <path class="ps-wilt" d="M0 0C-9-7-9-22 0-30C9-22 9-7 0 0Z" transform="rotate(36)"/>
+        </g>
+      </g>
+      <path class="ps-wilt ps-fall" d="M52 150c2-6 8-8 12-6-2 5-7 8-12 6Z"/>
+    </svg>
+    <div class="ps-burst" id="ps-burst" aria-hidden="true"></div>
+    </div>
+
+    <div class="ps-skel" id="ps-skel" aria-hidden="true"></div>
+
+    <h1 id="ps-title">Memuat status pesanan…</h1>
+    <p class="ps-lead" id="ps-lead"></p>
+    <p class="ps-code" id="ps-code" hidden>Kode pesanan <b id="ps-code-val"></b></p>
+    <ol class="ps-track" id="ps-track" aria-label="Perjalanan pesanan" hidden>
+      <li class="ps-tk"><span class="ps-tk-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tl-pay"></use></svg></span><span><span class="co-sr ps-tk-sr"></span>Dibayar</span></li>
+      <li class="ps-tk"><span class="ps-tk-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tl-arrange"></use></svg></span><span><span class="co-sr ps-tk-sr"></span>Dirangkai</span></li>
+      <li class="ps-tk"><span class="ps-tk-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tl-ride"></use></svg></span><span><span class="co-sr ps-tk-sr"></span>Diantar</span></li>
+      <li class="ps-tk"><span class="ps-tk-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tl-home"></use></svg></span><span><span class="co-sr ps-tk-sr"></span>Sampai</span></li>
+    </ol>
+    <p class="co-badge" id="ps-demo-badge" hidden>Mode uji — gateway belum dihubungkan</p>
+
+    <div class="ps-actions" id="ps-actions">
+      <button class="btn co-pay-btn" type="button" id="ps-pay" hidden>
+        <svg class="co-spin" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+        <span class="co-pay-label">Lanjutkan pembayaran</span>
+      </button>
+      <button class="btn co-pay-btn" type="button" id="ps-demo-ok" hidden>
+        <svg class="co-spin" viewBox="0 0 40 40" aria-hidden="true"><use href="#bloom"></use></svg>
+        <span class="co-pay-label">Simulasikan bayar berhasil</span>
+      </button>
+      <button class="btn co-btn-ghost" type="button" id="ps-demo-fail" hidden>Simulasikan gagal</button>
+      <button class="btn co-btn-ghost" type="button" id="ps-recheck" hidden>Cek status lagi</button>
+      <a class="btn" id="ps-shop" href="index.html#koleksi" hidden>Pilih bunga lagi</a>
+      <a class="btn ps-wa" id="ps-wa" href="https://wa.me/6281200000000"><svg class="co-ico" aria-hidden="true"><use href="#wa"></use></svg><span>Bantuan via WhatsApp</span></a>
+    </div>
+    <p class="co-submit-err" id="ps-err" role="alert"></p>
+    <p class="ps-poll" id="ps-poll" hidden><span class="ps-poll-row"><span class="ps-dot" aria-hidden="true"></span>Status diperbarui otomatis</span><span class="ps-poll-bar" aria-hidden="true"></span></p>
+  </section>
+
+  <section class="co-card ps-sum" id="ps-sum" aria-labelledby="ps-sum-title" hidden>
+    <h2 id="ps-sum-title">Ringkasan pesanan</h2>
+    <ul class="ps-items" id="ps-items"></ul>
+    <dl class="ps-meta">
+      <div><dt>Penerima</dt><dd id="ps-recipient"></dd></div>
+      <div><dt>Jadwal antar</dt><dd id="ps-when"></dd></div>
+      <div><dt>Subtotal</dt><dd id="ps-sub"></dd></div>
+      <div><dt>Ongkos antar</dt><dd id="ps-ship"></dd></div>
+      <div class="co-grand"><dt>Total</dt><dd id="ps-total"></dd></div>
+    </dl>
+  </section>
+</main>
+
+<script src="pesanan.js" defer></script>
+</body>
+</html>

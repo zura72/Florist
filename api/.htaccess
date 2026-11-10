@@ -1,0 +1,4 @@
+# Lindungi berkas sensitif di Apache shared hosting
+<FilesMatch "^(config\.php|config\.example\.php|bootstrap\.php)$">
+  Require all denied
+</FilesMatch>
